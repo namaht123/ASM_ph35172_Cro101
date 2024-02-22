@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, Button, TextInput, Image } from 'react-na
 import React from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import LinearGradient from 'react-native-linear-gradient';
-const App = () => {
+const Lienhe = () => {
     return (
         <View
         
@@ -203,7 +203,7 @@ const App = () => {
     )
 }
 
-export default App
+export default Lienhe
 
 
 

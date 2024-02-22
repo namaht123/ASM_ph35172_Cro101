@@ -2,7 +2,8 @@ import { View, Text, TouchableOpacity, Button, TextInput } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import LinearGradient from 'react-native-linear-gradient';
-const App = () => {
+
+const Login = props => {
     return (
         <View
             style={{
@@ -112,7 +113,7 @@ const App = () => {
                                 justifyContent: 'center',
                                 alignContent: 'center',
                             }}>  
-                            <TouchableOpacity activeOpacity={0.5} >
+                            <TouchableOpacity activeOpacity={0.5} onPress={() => props.navigation.navigate('ListProduct')} >
                                 <LinearGradient
                                 style = {{
                                     padding: 10,
@@ -128,7 +129,7 @@ const App = () => {
                                     <Text style = {{
                                         color: 'white',
                                         fontWeight: 'bold'
-                                    }}>Sign up</Text>
+                                    }}>Login</Text>
                                
                                 </LinearGradient> 
                                 </TouchableOpacity>
@@ -207,7 +208,7 @@ const App = () => {
     )
 }
 
-export default App
+export default Login
 
 
 

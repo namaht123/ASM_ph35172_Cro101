@@ -204,6 +204,9 @@ const Home = (pop) => {
                             fontWeight: 'bold',
                         }}>-{sp}</Text>)
                 }
+
+
+                
                 <View style = {{
                     flexDirection: 'row',
                     padding: 10,
